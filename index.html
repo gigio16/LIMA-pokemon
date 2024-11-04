@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokemon World</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <hr>
+            <hr>
+            <h1 style="text-align: center;">POKEMON WORLD</h1>
+            <ul>
+                 <hr> <li><a href="#home">Home</a></li>
+                
+                <hr> <li><a href="#Sobre">Sobre</a></li>
+                <hr> <li><a href="#Destaques">Destaques</a></li>
+                <hr> <li><a href="#Contatos">Contatos</a></li>
+                <hr> <li><a href="pagina-produto.html">Coleção</a></li>
+                <hr> <li><a href="login.html">Login</a></li>
+                <hr> <li><a href="Cadastro.html">Cadastrar-se</a></li> <hr>
+            </ul>
+            <hr>
+            <hr>
+        </nav>
+    </header>
+<br>
+    <!-- Search Bar -->
+    <div style="text-align: center;">
+        <input type="text" placeholder="Buscar estatuas ou cads">
+        <button>Pesquisar</button>
+        <br>
+        <button>Entrar</button>
+        <button>Cadastrar-se</button>
+    </div>
+    
+    <!-- Banner -->
+    <h1 style="text-align: center;">Conheça nossas ofertas!</h1>
+    
+     <center><div class="slider" style="text-align: center;">
+        <div class="slides">
+            <div class="slide">
+                <img src="banner1.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="banner2.png" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="banner3.png" alt="Banner 3">
+            </div>
+        </div>
+    </div>
+    </center>
+
+    <script>
+        // JavaScript básico para auto-slide
+        const slides = document.querySelector('.slides');
+        let index = 0;
+
+        function showSlide() {
+            index++;
+            if (index >= slides.children.length) {
+                index = 0;
+            }
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        setInterval(showSlide, 3000); // Muda o slide a cada 3 segundos
+    </script>
+
+    <!-- Destaques -->
+     
+    <h1 style="text-align: center;">Destaques</h1>
+    <div class="container">
+        <div class="card">
+            <h2>Estatua do <br>
+                 Pikachu</h2>
+            <img class="pokemon" src="imagem1.png" alt="Estatua do Pikachu">
+            <p>219,99 R$</p>
+            <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwidu8C9rqSIAxV-VUgAHbZUAO0YABAFGgJjZQ&co=1&ase=2&gclid=CjwKCAjwxNW2BhAkEiwA24Cm9GcypUygTwq3MjwtduRNfoMnxMg8e2QBYntDK4f_2HQ4ld3JpTFQQRoCBYIQAvD_BwE&sig=AOD64_2ZreuNy3M7UEc08PBb3IiUEm2zIA&ctype=5&q=&nis=4&ved=0ahUKEwiMkry9rqSIAxWSDbkGHQduAH8Qww8Ijgg&adurl=">compre aqui</a>
+        </div>
+
+        <div class="card">
+            <h2>Estatua do <br>
+                Gengar</h2>
+            <img class="pokemon" src="imagem2.png" alt="Estatua do Gengar">
+            <p>127,67 R$</p>
+            <a href="https://www.google.com/url?url=https://pt.aliexpress.com/item/1005006923484917.html%3F_randl_currency%3DBRL%26_randl_shipto%3DBR%26src%3Dgoogle&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiMkry9rqSIAxWSDbkGHQduAH8QgOUECKUJ&usg=AOvVaw2RqQd9zvyIG2w9rSCG7TLq">compre aqui</a>
+        </div>
+
+        <div class="card">
+            <h2>Estatua do <br>
+                Charizard</h2>
+            <img class="pokemon" src="imagem4.jfif" alt="Estatua do Charizard">
+            <p>1010,06 R$</p>
+            <a href="https://br.octoshop.com/pokemon-estatua-de-colecionador-deluxe-do-charizard-13-com-func-o-de-iluminac-o-478-b0brt5xyzs8so-47904-694.html">compre aqui</a>
+        </div>
+
+        <div class="card">
+            <h2>Estatua do <br>
+                Dragonite</h2>
+            <img class="pokemon" src="imagem3.png" alt="Estatua do Dragonite">
+            <p>317,00 R$</p>
+            <a href="https://www.google.com/url?url=https://produto.mercadolivre.com.br/MLB-3757438857-dragonite-estatua-pokemon-anime-action-figure-boneco-_JM%3Fmatt_tool%3D18956390%26utm_source%3Dgoogle_shopping%26utm_medium%3Dorganic&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiMkry9rqSIAxWSDbkGHQduAH8QgOUECMQK&usg=AOvVaw2vu0J5gXTTYV59A3RIpeBJ"> compre aqui</a></center>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Card's de colecionador</h1>
+
+    <!-- Galeria -->
+    <div class="galeria-container">
+        <div class="galeria-item">
+            <img src="imagem5.png" alt="Imagem 1">
+            <center><button class="button">49,90 R$</button></center>
+        </div>
+        <div class="galeria-item">
+            <img src="imagem6.png" alt="Imagem 2">
+            <center><button class="button">49,90 R$</button></center>
+        </div>
+        <div class="galeria-item">
+            <img src="imagem7.png" alt="Imagem 3">
+            <center><button class="button">39,80 R$</button></center>
+        </div>
+        <div class="galeria-item">
+            <img src="imagem8.png" alt="Imagem 4">
+            <center><button class="button">49,90 R$</button></center>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <div style="text-align: center;">
+        <h1>Sobre</h1>
+        <p>
+            Embarque em uma jornada fantástica pelo universo Pokémon com o Pokémon World,<br>
+            sua loja online definitiva para produtos inspirados no mundo dos Pocket Monsters!<br>
+            Se você é um Treinador em busca de novos itens para sua coleção ou simplesmente<br>
+            quer exibir seu amor pelos Pokémon, nosso site é o lugar perfeito para você.<br>
+            No Pokémon World, oferecemos uma ampla gama de produtos, desde figuras colecionáveis<br>
+            e pelúcias adoráveis até acessórios temáticos e roupas estilizadas. Cada item é<br>
+            cuidadosamente selecionado para garantir a melhor qualidade e autenticidade, trazendo<br>
+            a magia dos seus Pokémon favoritos diretamente para você.<br>
+            Prepare-se para a aventura e descubra um mundo de produtos Pokémon que vai fazer<br>
+            seu coração bater mais forte. Pokémon World – onde a paixão pelos Pokémon ganha<br>
+            vida!
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="rodape">
+            <div class="container">
+                <div class="contact-info">
+                    <p>Endereço: Rua dos Jogos, 123 - Cidade Campinas, Estado Sao Paulo</p>
+                    <p>Telefone: (19) 1234-5678</p>
+                    <p>Email: gio27111@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Política de Priv.</a>
+                    <a href="#">Termos de Serviço</a>
+                </div>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="newsletter">
+                    <h4>Inscreva-se na nossa newsletter</h4>
+                    <input type="email" placeholder="Seu e-mail">
+                    <button>Inscrever-se</button>
